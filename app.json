@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "ERP Manager",
+    "slug": "erp-manager",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "scheme": "erp-manager",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#1565C0"
+        }
+      ],
+      "expo-sharing"
+    ],
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1565C0"
+      },
+      "package": "com.erp.manager"
+    },
+    "ios": {
+      "bundleIdentifier": "com.erp.manager"
+    },
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}
